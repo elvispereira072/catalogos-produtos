@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Catálogo de Produtos</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header>
+        <h1>Catálogo de Produtos</h1>
+        <div class="cart">
+            <span>Carrinho (<span id="cart-count">0</span>)</span>
+        </div>
+        <a href="login.html">Login</a>
+        <button id="theme-toggle">Alternar Tema</button>
+    </header>
+
+    <div class="search-container">
+        <input type="text" id="search" placeholder="Buscar produtos...">
+        <select id="category">
+            <option value="all">Todas as Categorias</option>
+            <option value="category1">Categoria 1</option>
+            <option value="category2">Categoria 2</option>
+        </select>
+    </div>
+
+    <div class="highlight-items" id="highlight-items">
+        <!-- Produtos em destaque -->
+    </div>
+
+    <div class="product-items" id="product-items">
+        <!-- Lista de produtos -->
+    </div>
+
+    <div class="pagination">
+        <button id="prev-page">Anterior</button>
+        <span id="current-page">1</span>
+        <button id="next-page">Próxima</button>
+    </div>
+
+    <div id="product-modal" class="modal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <img id="modal-img" src="" alt="">
+            <h3 id="modal-title"></h3>
+            <p id="modal-description"></p>
+            <p id="modal-price"></p>
+            <button id="modal-add-to-cart">Adicionar ao Carrinho</button>
+            <div id="comments-section">
+                <h4>Comentários</h4>
+                <div id="comments-list"></div>
+                <textarea id="comment-input" placeholder="Adicione um comentário..."></textarea>
+                <button id="add-comment">Adicionar Comentário</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
